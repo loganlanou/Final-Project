@@ -6,44 +6,103 @@
     <title>Logan's 3D Creations</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #000;
+            background-color: #121212;
             color: #fff;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
         }
+
         header {
-            background-color: #ff0000;
-            color: white;
-            padding: 10px 0;
+            background-color: #f00000;
+            padding: 20px 0;
             text-align: center;
+            position: relative;
+            animation: fadeInDown 1s ease-in-out;
         }
         nav {
             display: flex;
             justify-content: center;
             background-color: #333;
+            padding: 10px 0;
+            animation: fadeInDown 1s ease-in-out;
         }
         nav a {
             color: white;
             padding: 14px 20px;
             text-decoration: none;
             text-align: center;
+            transition: background-color 0.3s, transform 0.3s;
         }
         nav a:hover {
-            background-color: #ff0000;
+            background-color: #ff4c4c;
+            transform: scale(1.1);
         }
         .container {
             padding: 20px;
             flex: 1;
+            text-align: center;
+            animation: fadeInUp 1s ease-in-out;
+        }
+        .image-section {
+            margin: 20px auto;
+            width: 80%;
+            height: 300px;
+            background: linear-gradient(135deg, #ff4c4c, #121212);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            position: relative;
+        }
+        .image-section img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.9;
+            transition: opacity 0.5s ease;
+        }
+        .image-section:hover img {
+            opacity: 1;
+        }
+        .description {
+            margin-top: 20px;
+            font-size: 1.2em;
+            line-height: 1.6;
         }
         footer {
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 0px 0;
+            padding: 10px 0;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
@@ -58,8 +117,16 @@
         <a href="contact.html">Contact</a>
     </nav>
     <div class="container">
-        <h2>Welcome to Logan's 3D Creations!</h2>
-        <p>Explore our collection of high-quality 3D printed products.</p>
+        <img src="logo.png" alt="Website Logo">
+        <div class="image-section">
+        <video controls width="100%" height="100%">
+            <source src="featured-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        </div>
+        <div class="description">
+            Welcome to Logan's 3D Creations! Our mission is to deliver innovative and high-quality 3D-printed products at a reasonable price range to spark your imagination and creativity.
+        </div>
     </div>
     <footer>
         <p>&copy; 2025 Logan's 3D Creations. All Rights Reserved.</p>
