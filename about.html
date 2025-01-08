@@ -6,40 +6,115 @@
     <title>About Us - Logan's 3D Creations</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #000;
-            color: #fff;
+            background: linear-gradient(135deg, #2f2c2c, #1a1a1a);
+            color: #ffffff;
+            overflow-x: hidden;
         }
+
         header {
-            background-color: #ff0000;
-            color: white;
-            padding: 10px 0;
+            background: linear-gradient(90deg, #ff0000, #ff4d4d);
+            color: #fff;
+            padding: 20px 0;
             text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
         }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+            animation: fadeInDown 1s ease;
+        }
+
         nav {
             display: flex;
             justify-content: center;
-            background-color: #333;
+            background: #333;
+            padding: 10px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
         }
+
         nav a {
-            color: white;
+            color: #ffffff;
             padding: 14px 20px;
             text-decoration: none;
-            text-align: center;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
+
         nav a:hover {
-            background-color: #ff0000;
+            background-color: #ff4d4d;
+            transform: scale(1.1);
         }
+
         .container {
-            padding: 20px;
-        }
-        footer {
-            background-color: #333;
-            color: white;
+            padding: 40px;
             text-align: center;
-            padding: 1px 0;
+            animation: fadeInUp 1.5s ease;
+        }
+
+        .container h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #ff4d4d;
+        }
+
+        .container p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.6);
+        }
+
+        footer p {
+            margin: 5px 0;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: #ff4d4d;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
@@ -58,9 +133,10 @@
         <p>Welcome to Logan's 3D Creations! We are a leading 3D printing company dedicated to bringing your ideas to life. Our team of experts uses the latest technology to create high-quality 3D printed products for a variety of industries.</p>
         <p>At Logan's 3D Creations, we believe in innovation, quality, and customer satisfaction. Whether you need a prototype, a custom part, or a unique gift, we are here to help you every step of the way.</p>
     </div>
+    <footer>
+        <p>&copy; 2025 Logan's 3D Creations. All Rights Reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a> | <a href="https://example.com">External Resource</a></p>
+    </footer>
 </body>
-<footer>
-    <p>&copy; 2025 Logan's 3D Creations. All Rights Reserved.</p>
-    <p><a href="privacy.html">Privacy Policy</a> | <a href="https://example.com">External Resource</a></p>
-</footer>
 </html>
+
