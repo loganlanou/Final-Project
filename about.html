@@ -15,7 +15,7 @@
         }
 
         header {
-            background: linear-gradient(90deg, #ff0000, #ff4d4d);
+            background: linear-gradient(90deg, #ff0000, #ff0000);
             color: #fff;
             padding: 20px 0;
             text-align: center;
@@ -46,7 +46,7 @@
         }
 
         nav a:hover {
-            background-color: #ff4d4d;
+            background-color: #ff0000;
             transform: scale(1.1);
         }
 
@@ -58,8 +58,13 @@
 
         .container h2 {
             font-size: 2em;
-            margin-bottom: 20px;
-            color: #ff4d4d;
+            margin-bottom: 2px;
+            color: #ff0000;
+            background: #333;
+            padding: 10px;
+            border-radius: 10px;
+            display: inline-block;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
         }
 
         .container p {
@@ -79,22 +84,6 @@
             width: 100%;
             box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.6);
         }
-
-        footer p {
-            margin: 5px 0;
-            font-size: 0.9em;
-        }
-
-        footer a {
-            color: #ff4d4d;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        footer a:hover {
-            color: #ffffff;
-        }
-
         @keyframes fadeInDown {
             from {
                 opacity: 0;
@@ -120,7 +109,11 @@
 </head>
 <body>
     <header>
-        <h1>Logan's 3D Creations</h1>
+        <h1>About Us</h1>
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favico/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favico/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favico/favicon-16x16.png">
+<link rel="manifest" href="/assets/favico/site.webmanifest">
     </header>
     <nav>
         <a href="index.html">Home</a>
