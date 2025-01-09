@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,6 +24,7 @@
             position: relative;
             animation: fadeInDown 1s ease-in-out;
         }
+
         nav {
             display: flex;
             justify-content: center;
@@ -30,6 +32,7 @@
             padding: 10px 0;
             animation: fadeInDown 1s ease-in-out;
         }
+
         nav a {
             color: white;
             padding: 14px 20px;
@@ -37,21 +40,24 @@
             text-align: center;
             transition: background-color 0.3s, transform 0.3s;
         }
+
         nav a:hover {
-            background-color: #ff4c4c;
+            background-color: #ff0000;
             transform: scale(1.1);
         }
+
         .container {
             padding: 20px;
             flex: 1;
             text-align: center;
             animation: fadeInUp 1s ease-in-out;
         }
+
         .image-section {
             margin: 20px auto;
             width: 80%;
             height: 300px;
-            background: linear-gradient(135deg, #ff4c4c, #121212);
+            background: linear-gradient(135deg, #ff0000, #121212);
             border-radius: 10px;
             display: flex;
             align-items: center;
@@ -60,6 +66,7 @@
             overflow: hidden;
             position: relative;
         }
+
         .image-section img {
             width: 100%;
             height: 100%;
@@ -67,14 +74,17 @@
             opacity: 0.9;
             transition: opacity 0.5s ease;
         }
+
         .image-section:hover img {
             opacity: 1;
         }
+
         .description {
             margin-top: 20px;
             font-size: 1.2em;
             line-height: 1.6;
         }
+
         footer {
             background-color: #333;
             color: white;
@@ -88,6 +98,7 @@
                 opacity: 0;
                 transform: translateY(-20px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -99,6 +110,7 @@
                 opacity: 0;
                 transform: translateY(20px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -106,13 +118,14 @@
         }
     </style>
 </head>
+
 <body>
     <header>
         <h1>Logan's 3D Creations</h1>
         <link rel="apple-touch-icon" sizes="180x180" href="/assets/favico/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/favico/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/assets/favico/favicon-16x16.png">
-<link rel="manifest" href="/assets/favico/site.webmanifest">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favico/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favico/favicon-16x16.png">
+        <link rel="manifest" href="/assets/favico/site.webmanifest">
     </header>
     <nav>
         <a href="index.html">Home</a>
@@ -123,13 +136,14 @@
     <div class="container">
         <img src="logo.png" alt="Website Logo">
         <div class="image-section">
-        <video controls width="100%" height="100%">
-            <source src="featured-video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+            <video controls width="100%" height="100%">
+                <source src="featured-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
         <div class="description">
-            Welcome to Logan's 3D Creations! Our mission is to deliver innovative and high-quality 3D-printed products at a reasonable price range to spark your imagination and creativity.
+            Welcome to Logan's 3D Creations! Our mission is to deliver innovative and high-quality 3D-printed products
+            at a reasonable price range to spark your imagination and creativity.
         </div>
     </div>
     <footer>
@@ -137,4 +151,5 @@
         <p><a href="privacy.html">Privacy Policy</a> | <a href="https://example.com">External Resource</a></p>
     </footer>
 </body>
+
 </html>

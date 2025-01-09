@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +16,7 @@
             flex-direction: column;
             min-height: 100vh;
         }
+
         header {
             background-color: #f00000;
             padding: 20px 0;
@@ -22,35 +24,46 @@
             position: relative;
             animation: fadeInDown 1s ease-in-out;
         }
+
         .container {
             padding: 20px;
             flex: 1;
             text-align: center;
             animation: fadeInUp 1s ease-in-out;
         }
+
         #cart {
             margin: 20px 0;
         }
+
         #cart table {
             width: 100%;
             border-collapse: collapse;
             background-color: #333;
         }
-        #cart table, #cart th, #cart td {
+
+        #cart table,
+        #cart th,
+        #cart td {
             border: 1px solid #ddd;
         }
-        #cart th, #cart td {
+
+        #cart th,
+        #cart td {
             padding: 10px;
             text-align: left;
         }
+
         #cart th {
             background-color: #444;
         }
+
         .total {
             text-align: right;
             padding: 10px;
             font-size: 18px;
         }
+
         .checkout-btn {
             display: block;
             width: 100%;
@@ -63,10 +76,12 @@
             margin-top: 20px;
             transition: background-color 0.3s, transform 0.3s;
         }
+
         .checkout-btn:hover {
             background-color: #218838;
             transform: scale(1.1);
         }
+
         footer {
             background-color: #333;
             color: white;
@@ -74,21 +89,25 @@
             padding: 10px 0;
             animation: fadeInUp 1s ease-in-out;
         }
+
         @keyframes fadeInDown {
             from {
                 opacity: 0;
                 transform: translateY(-20px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
+
         @keyframes fadeInUp {
             from {
                 opacity: 0;
                 transform: translateY(20px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -96,13 +115,14 @@
         }
     </style>
 </head>
+
 <body>
     <header>
         <h1>Shopping Cart</h1>
         <link rel="apple-touch-icon" sizes="180x180" href="/assets/favico/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/favico/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/assets/favico/favicon-16x16.png">
-<link rel="manifest" href="/assets/favico/site.webmanifest">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favico/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favico/favicon-16x16.png">
+        <link rel="manifest" href="/assets/favico/site.webmanifest">
     </header>
     <div class="container">
         <div id="cart">
@@ -141,4 +161,5 @@
         <p><a href="privacy.html">Privacy Policy</a> | <a href="https://example.com">External Resource</a></p>
     </footer>
 </body>
+
 </html>
