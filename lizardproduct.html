@@ -100,6 +100,23 @@
             background-color: #444;
         }
 
+        .back-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #f00000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #ff0000;
+            transform: scale(1.1);
+        }
+
         footer {
             background-color: #333;
             color: white;
@@ -147,7 +164,7 @@
         <a href="cart.html">Cart</a>
     </nav>
     <div class="product">
-        <img src="lizard.jpg" alt="Product Image">
+        <img src="lizard.jpg" alt="Monitor Lizard Product Image">
         <h1>Monitor Lizard</h1>
         <p class="description">This is a cool little product that sits on top of your monitor to improve your office aesthetic.</p>
         <p class="price">$4.99</p>
@@ -179,6 +196,7 @@
             <li>Green</li>
             <li>Yellow</li>
         </ul>
+        <button class="back-button" onclick="history.back()">Back</button>
     </div>
     <footer>
         <p>&copy; 2025 Logan's 3D Creations. All Rights Reserved.</p>
