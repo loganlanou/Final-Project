@@ -124,8 +124,8 @@ nav a:hover {
     text-align: center;
 }
 .product img {
-    max-width: 100%;
-    height: 200px; /* Set a fixed height for the product images */
+    max-width: 150%;
+    height: 300px; /* Set a fixed height for the product images */
     object-fit: cover; /* Ensure the image covers the area */
     border-bottom: 1px solid #444;
     padding-bottom: 15px;
