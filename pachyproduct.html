@@ -5,142 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Page</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #121212;
-            color: #fff;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        header {
-            background-color: #f00000;
-            padding: 20px 0;
-            text-align: center;
-            position: relative;
-            animation: fadeInDown 1s ease-in-out;
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #333;
-            padding: 10px 0;
-            animation: fadeInDown 1s ease-in-out;
-        }
-
-        nav a {
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-            text-align: center;
-            transition: background-color 0.3s, transform 0.3s;
-        }
-
-        nav a:hover {
-            background-color: #ff0000;
-            transform: scale(1.1);
-        }
-
-        .product {
-            max-width: 600px;
-            margin: 20px auto;
-            padding: 20px;
-            border-radius: 10px;
-            background-color: #333;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-            animation: fadeInUp 1s ease-in-out;
-        }
-
-        .product img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto 20px;
-            border-radius: 10px;
-            opacity: 0.9;
-            transition: opacity 0.5s ease;
-        }
-
-        .product img:hover {
-            opacity: 1;
-        }
-
-        .product h1 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-
-        .product p {
-            font-size: 16px;
-            margin-bottom: 10px;
-        }
-
-        .product .price {
-            font-size: 20px;
-            color: #b12704;
-            margin-bottom: 20px;
-        }
-
-        .product .colors {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .product .colors li {
-            display: inline-block;
-            margin-right: 10px;
-            padding: 5px 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            background-color: #444;
-        }
-
-        .back-button {
-            display: block;
-            margin: 20px auto;
-            padding: 10px 20px;
-            background-color: #f00000;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s, transform 0.3s;
-        }
-
-        .back-button:hover {
-            background-color: #ff0000;
-            transform: scale(1.1);
-        }
-
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -155,7 +20,7 @@
         <a href="custom.html">Custom Order</a>
         <a href="cart.html">Cart</a>
     </nav>
-    <div class="product">
+    <div class="productp select">
         <img src="pachycephalosaurus.jpg" alt="Product Image">
         <h1>Pachycephalosaurus</h1>
         <p class="description">This is a great product that is printed with modular multicolor filament.</p>
@@ -183,6 +48,10 @@
         </ul>
         <button class="back-button" onclick="history.back()">Back</button>
     </div>
+    <footer>
+        <p>&copy; 2025 Logan's 3D Creations. All Rights Reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a> | <a href="https://www.logans3dcreations.com/">Current Website</a></p>
+    </footer>
 </body>
 
 </html>
