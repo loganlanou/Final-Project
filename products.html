@@ -89,6 +89,28 @@
             font-size: 20px;
             margin-top: 10px;
         }
+        .pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background-color: #333;
+        color: #fff;
+    }
+
+    .pagination button, .pagination select {
+        background-color: #444;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        margin: 0 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .pagination button:hover, .pagination select:hover {
+        background-color: #ff0000;
+    }
         
         footer {
             background-color: #333;
@@ -122,6 +144,19 @@
             }
         }
     </style>
+    <script>
+        function prevPage() {
+            // Logic to go to the previous page
+        }
+    
+        function nextPage() {
+            // Logic to go to the next page
+        }
+    
+        function goToPage(pageNumber) {
+            // Logic to go to the selected page
+        }
+    </script>
 </head>
 
 <body>
@@ -186,6 +221,16 @@
             </div>
         </a>
         </div>
+        <div class="pagination"></div>
+        <button class="prev-page" onclick="prevPage()">Previous</button>
+        <select class="page-selector" onchange="goToPage(this.value)">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <!-- Add more options as needed -->
+        </select>
+        <button class="next-page" onclick="nextPage()">Next</button>
+    </div>
 <footer>
     <p>&copy; 2025 Logan's 3D Creations. All Rights Reserved.</p>
     <p><a href="privacy.html">Privacy Policy</a> | <a href="https://www.logans3dcreations.com/">Current Website</a></p>
