@@ -72,6 +72,16 @@ nav a:hover {
     padding: 20px;
     animation: fadeInUp 1s ease-in-out;
 }
+.container h2 { 
+    font-size: 2em;
+    margin-bottom: 2px;
+    color: #ff0000;
+    background: #333;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
 .container.about {
     padding: 40px;
     text-align: center;
