@@ -58,6 +58,11 @@ nav a:hover {
 .container.index {
     text-align: center;
 }
+
+.container.index img {
+    max-width: 50%; /* Adjust the percentage as needed */
+    height: auto;
+}
 .container {
     padding: 20px;
     flex: 1;
